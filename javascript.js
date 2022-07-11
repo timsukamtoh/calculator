@@ -28,7 +28,9 @@ decimalButton.addEventListener('click', inputDecimal)
 equalButton.addEventListener('click', ()=> evaluate(num1,screen.textContent.slice(1)));  //evaluate sliced 1 char over in case first char is '-'
 clearButton.addEventListener('click',clear)
 delButton.addEventListener('click', deleteInput)
-
+window.addEventListener('keydown', (e)=>{
+    inputKeys(e);
+})
 
 function add(num1,num2){
     return num1+num2;
@@ -125,10 +127,6 @@ function removeTransition(e) { //remove button click effect
     if(e.propertyName !== 'transform') return;
     this.classList.remove('clicked');
 };
-
-window.addEventListener('keydown', (e)=>{
-    console.log(e.key);
-})
 
 function inputKeys(e){
     if (e.key >= 0 && e.key <= 9) {
