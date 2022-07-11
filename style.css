@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px
+}
+
+
+#main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightslategrey;
+    width: 450px;
+    height: auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#screen{
+    display: flex;
+    word-break: break-all;
+    flex: auto;
+    background-color:antiquewhite;
+    justify-content: end;
+    align-items:flex-end;
+    font-size: 60px;
+    margin: 20px;
+    min-width: 360px;
+    max-width: 360px;
+    min-height: 100px;
+    height: auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#button-area{
+    display: flex;
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+#left-buttons{
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 310px;
+    margin: 2px 0px;
+    gap: 5px;
+}
+
+button{
+    font-size: 28px;
+    transition:all 0.03s;
+}
+.number{
+    display: flex;
+    width: 98px;
+    background-color: grey;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.clicked{
+    transform: scale(1.05);
+    filter: brightness(125%);
+}
+
+#right-buttons{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 2px;
+    width: 90px;
+    gap: 5px;
+}
+
+.operator{
+    display: flex;
+    background-color: skyblue;
+    color: white;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+#equal{
+    display: flex;
+    background-color: rgb(5, 122, 5);
+    color: white;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+#decimal{
+    display: flex;
+    width: 98px;
+    background-color: grey;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+#clear{
+    display: flex;
+    background-color: rgb(156, 3, 3);
+    color: white;
+    width: 98px;
+    justify-content: center;
+    align-items: center;
+}
+#delete{
+    display: flex;
+    background-color: rgb(156, 3, 3);
+    color: white;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
